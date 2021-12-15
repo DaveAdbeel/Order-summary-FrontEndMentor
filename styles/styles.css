@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 350px;
+  height: 600px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.header-container {
+  width: 350px;
+  height: 180px;
+}
+
+.hero_image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.section-info_container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.info_title {
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.info_text {
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+
+.plan_title {
+  font-weight: 700;
+  margin: 0px 10px 2px 15px;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan_price {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan_change-button {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.2s ease-in-out;
+}
+
+.plan_change-button:hover {
+  color: hsl(245, 75%, 52%, 75%);
+  text-decoration: none;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.buttons-container button {
+  font-family: "Red Hat Display", sans-serif;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 900;
+}
+.proceed_button {
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0px 15px 15px 5px hsl(225, 100%, 94%);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.proceed_button:hover {
+  background-color: hsl(245, 75%, 52%, 75%);
+}
+
+.cancel_button {
+  color: hsl(224, 23%, 55%);
+  background-color: transparent;
+  transition: color 0.2s ease-in-out;
+}
+
+.cancel_button:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+}
